@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Space+Mono:700');
+@import url('https://fonts.googleapis.com/css?family=Prata');
+// @import url('https://fonts.googleapis.com/css?family=Unica+One');
+* {
+  box-sizing: border-box;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+html {
+  font-size: 62.5%;
+  // background: radial-gradient(ellipse at center, $base 0, $darken 80%, $back 100%);
+  background: lightgray;
+}
+body {
+  font: 300 13px/1.6 'Helvetica Neue', Helvetica, Arial;
+  color: #444;
+  transition: all .4s .3s ease-in;
+}
+body,html{
+	min-height: 100vh;
+  overflow: hidden;
+}
+#container{
+  display: flex;
+  justify-content: center;
+}
+
+#title{
+  position: absolute;
+  font-family: 'Prata', serif;
+  font-size: 3rem;
+  // font-family: 'Unica One', serif;
+  // font-size: 4rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin:8px;
+  top:44px;
+  left: 0;
+  right: 0;
+  line-height: 1.2;
+  // margin:0;
+}
+.emojis{
+  font-size: 2.4rem;
+  padding: 0 10px 0 10px;
+}
+#year{
+  position: absolute;
+  font-family: 'Prata', serif;
+  font-size: 1rem;
+  // text-transform: uppercase;
+  text-align: center;
+  display: block;
+  width:40px;
+  background: white;
+  margin: 0 auto;
+  padding: 2px 0 0 0;
+  border-radius:50px;
+  top:94px;
+  left: 0;
+  right: 0;
+}
+
+#cyoaBanner{
+  position: absolute;
+  display: block;
+  // width: 400px;
+  height: 20px;
+  margin: 20px auto 0 auto;
+  // margin: auto;
+  left: 0;
+  right: 0;
+  border-radius:50px;
+}
+#photoContainer{
+  position: relative;
+  width: 260px;
+  height: 540px;
+}
+#adlerFamPhoto{
+  // width:30%;
+  // margin-top: 10vh;
+  height: 540px;
+  position: absolute;
+  margin: 120px auto 0 auto;
+  left: 0;
+  right: 0;
+  // align-self: center;
+  z-index:1000;
+}
+#beach, #street{
+  // width:100%;
+  height: 100vh;
+  position: absolute;
+  z-index: -1;
+}
+#street{
+
+}
+
+#optionsMenu{
+  // font-family: 'Space Mono', monospace;
+  // text-align: center;
+  // text-decoration: underline;
+}
+#menu{
+  font-family: 'Space Mono', monospace;
+  font-size: 1.2rem;
+  width:620px;
+  height:100px;
+  background: white;
+  padding:20px;
+  position: absolute;
+  // text-align: center;
+  // margin: 0 auto;
+  bottom:20px;
+  // left:0;
+  // justify-self: center;
+  z-index: 2000;
+
+  margin: auto;
+  left: 0;
+  right: 0;
+
+}
+
+.chbLabel{
+  // font-family: 'Space Mono', monospace;
+  font-size: 1.2rem;
+  margin: 0 20px 0 10px;
+}
+
+.inputPair{
+  width:300px;
+}
+
+#checkBoxContainer{
+  // width:300;
+  display: flex;
+  // justify-content: space-between;
+  align-items: center;
+}
+#tomCruiseOld{
+  z-index: 1002;
+  position: relative;
+  top:120px;
+  left:78px;
+  height:78px;
+  transform: rotate(10deg);
+}
+
+#tomCruiseYoung{
+  z-index: 1001;
+  position: relative;
+  top:120px;
+  left:12px;
+  height:82px;
+  transform: rotate(10deg);
+}

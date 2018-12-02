@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Space+Mono:700");
+@import url("https://fonts.googleapis.com/css?family=Prata");
 .clear:before, .clear:after {
   content: ' ';
   display: table; }
@@ -6,24 +8,6 @@
   *zoom: 1; }
   .clear:after {
     clear: both; }
-
-* {
-  box-sizing: border-box;
-  font-smoothing: antialiased;
-  text-rendering: optimizeLegibility; }
-
-html {
-  font-size: 62.5%;
-  background: radial-gradient(ellipse at center, #F7F6F0 0, #c2ba8c 80%, #b0a66b 100%); }
-
-body {
-  font: 300 13px/1.6 'Helvetica Neue', Helvetica, Arial;
-  color: #444;
-  transition: all .4s .3s ease-in; }
-
-body, html {
-  min-height: 100vh;
-  overflow: hidden; }
 
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -391,12 +375,6 @@ textarea {
   font: inherit;
   /* 2 */ }
 
-.logo {
-  margin: -58px 0 0 -100px;
-  position: absolute;
-  top: 50%;
-  left: 50%; }
-
 .nav ul {
   list-style: none; }
 
@@ -426,6 +404,133 @@ textarea {
   background: #333;
   color: #fff;
   text-shadow: none; }
+
+* {
+  box-sizing: border-box;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility; }
+
+html {
+  font-size: 62.5%;
+  background: lightgray; }
+
+body {
+  font: 300 13px/1.6 'Helvetica Neue', Helvetica, Arial;
+  color: #444;
+  transition: all .4s .3s ease-in; }
+
+body, html {
+  min-height: 100vh;
+  overflow: hidden; }
+
+#container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
+
+#title {
+  position: absolute;
+  font-family: 'Prata', serif;
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 8px;
+  top: 44px;
+  left: 0;
+  right: 0;
+  line-height: 1.2; }
+
+.emojis {
+  font-size: 2.4rem;
+  padding: 0 10px 0 10px; }
+
+#year {
+  position: absolute;
+  font-family: 'Prata', serif;
+  font-size: 1rem;
+  text-align: center;
+  display: block;
+  width: 40px;
+  background: white;
+  margin: 0 auto;
+  padding: 2px 0 0 0;
+  border-radius: 50px;
+  top: 94px;
+  left: 0;
+  right: 0; }
+
+#cyoaBanner {
+  position: absolute;
+  display: block;
+  height: 20px;
+  margin: 20px auto 0 auto;
+  left: 0;
+  right: 0;
+  border-radius: 50px; }
+
+#photoContainer {
+  position: relative;
+  width: 260px;
+  height: 540px; }
+
+#adlerFamPhoto {
+  height: 540px;
+  position: absolute;
+  margin: 120px auto 0 auto;
+  left: 0;
+  right: 0;
+  z-index: 1000; }
+
+#beach, #street {
+  height: 100vh;
+  position: absolute;
+  z-index: -1; }
+
+#menu {
+  font-family: 'Space Mono', monospace;
+  font-size: 1.2rem;
+  width: 620px;
+  height: 100px;
+  background: white;
+  padding: 20px;
+  position: absolute;
+  bottom: 20px;
+  z-index: 2000;
+  margin: auto;
+  left: 0;
+  right: 0; }
+
+.chbLabel {
+  font-size: 1.2rem;
+  margin: 0 20px 0 10px; }
+
+.inputPair {
+  width: 300px; }
+
+#checkBoxContainer {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center; }
+
+#tomCruiseOld {
+  z-index: 1002;
+  position: relative;
+  top: 120px;
+  left: 78px;
+  height: 78px;
+  -ms-transform: rotate(10deg);
+      transform: rotate(10deg); }
+
+#tomCruiseYoung {
+  z-index: 1001;
+  position: relative;
+  top: 120px;
+  left: 12px;
+  height: 82px;
+  -ms-transform: rotate(10deg);
+      transform: rotate(10deg); }
 
 @media print {
   * {
